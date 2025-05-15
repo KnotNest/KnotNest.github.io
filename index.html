@@ -1,15 +1,164 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>KnotNest アプリ一覧</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>KnotNest - アプリ紹介</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f9f9fb;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .filter {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    select {
+      padding: 0.5em;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .app {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+    .app:hover {
+      transform: translateY(-3px);
+    }
+    .app h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .app p {
+      margin: 0.5em 0;
+      color: #555;
+    }
+    .label {
+      font-weight: bold;
+      color: #222;
+    }
+    a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9em;
+      margin: 4em 0 2em;
+    }
+    .hidden {
+      display: none;
+    }
+  
+    @media (max-width: 600px) {
+      body {
+        padding: 1em;
+        font-size: 0.95em;
+      }
+      .container {
+        padding: 0 1em;
+      }
+      .app {
+        padding: 1em;
+      }
+      header h1 {
+        font-size: 1.4em;
+      }
+      .filter select {
+        width: 90%;
+        font-size: 1em;
+      }
+    }
+
+  </style>
+  <script>
+    function filterCategory(cat) {
+      const apps = document.querySelectorAll('.app');
+      apps.forEach(app => {
+        if (cat === 'all' || app.dataset.category === cat) {
+          app.classList.remove('hidden');
+        } else {
+          app.classList.add('hidden');
+        }
+      });
+    }
+  </script>
 </head>
 <body>
-  <h1>KnotNest アプリ一覧</h1>
-  <ul>
-    <li><a href="https://apps.apple.com/jp/app/今日の仮面/idXXXXXXXXX">今日の仮面 - App Store</a></li>
-    <li><a href="https://apps.apple.com/jp/app/threeworddiary/idYYYYYYYY">3単語日記 - App Store</a></li>
-    <!-- 必要に応じてアプリを追加 -->
-  </ul>
+  <header>
+    <h1>📱 KnotNest アプリ一覧</h1>
+    <p>あなたの暮らしを豊かにするアプリたち</p>
+  </header>
+  <div class="container">
+    <div class="filter">
+      <label for="category">カテゴリで絞り込み: </label>
+      <select id="category" onchange="filterCategory(this.value)">
+        <option value="all">すべて表示</option><option value="エンターテイメント">エンターテイメント</option>
+<option value="スポーツ">スポーツ</option>
+<option value="トレーニング">トレーニング</option>
+      </select>
+    </div>
+
+<div class="app" data-category="エンターテイメント">
+<h2>3単語日記-私の脳内-</h2>
+<p><span class="label">カテゴリ:</span> エンターテイメント</p>
+<p><span class="label">Android版:</span> 審査中</p>
+<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745698061" target="_blank">App Storeで見る</a></p>
+<p><span class="label">アプリ説明:</span> 1日を3つの単語で記録することで、自分の思考傾向や感情を見える化する自己理解促進アプリ。感情や記憶をシンプルに振り返ることで、メンタルの安定や生活改善につなげます。</p>
+</div>
+<div class="app" data-category="エンターテイメント">
+<h2>LifeTimer-生活リズムを整える-</h2>
+<p><span class="label">カテゴリ:</span> エンターテイメント</p>
+<p><span class="label">Android版:</span> 審査中</p>
+<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745680646" target="_blank">App Storeで見る</a></p>
+<p><span class="label">アプリ説明:</span> 人生の重要な出来事や予定を、視覚的にカウントダウン・カウントアップするライフイベント可視化アプリ。未来への期待や過去の感謝を日々感じながら、生活の質を高めることを目的としています。</p>
+</div>
+<div class="app" data-category="エンターテイメント">
+<h2>今日の仮面-本当の私を探して-</h2>
+<p><span class="label">カテゴリ:</span> エンターテイメント</p>
+<p><span class="label">Android版:</span> 審査中</p>
+<p><span class="label">iOS版:</span> 審査中</p>
+<p><span class="label">アプリ説明:</span> 毎朝7時に通知が届き、その日の「仮面」を提案。気分や目標に応じて仮面を選び、1日をどう過ごすかの指針とする自己対話サポートアプリ。仮面は1日1回のみ選べる設計で、集中と継続性を促進。</p>
+</div>
+<div class="app" data-category="スポーツ">
+<h2>バドミントン試合管理</h2>
+<p><span class="label">カテゴリ:</span> スポーツ</p>
+<p><span class="label">Android版:</span> 審査中</p>
+<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745685426" target="_blank">App Storeで見る</a></p>
+<p><span class="label">アプリ説明:</span> メンバー登録を行うことで、自動で対戦表を生成し、試合結果をランキング形式で記録・表示できるバドミントン専用マネジメントアプリ。大会や練習試合の運営がスムーズに。</p>
+</div>
+<div class="app" data-category="トレーニング">
+<h2>Myインターバルタイマー</h2>
+<p><span class="label">カテゴリ:</span> トレーニング</p>
+<p><span class="label">Android版:</span> 審査中</p>
+<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745688024" target="_blank">App Storeで見る</a></p>
+<p><span class="label">アプリ説明:</span> 種目ごとに柔軟にインターバルを設定できるトレーニングタイマー。セット間の休憩時間、通知音、バイブなどの細かい制御が可能で、筋トレやHIITに最適。</p>
+</div>
+
+  </div>
+  <footer>© 2025 KnotNest</footer>
 </body>
 </html>
