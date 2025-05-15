@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -47,6 +46,8 @@
     .app h2 {
       margin-top: 0;
       color: #333;
+      display: flex; /* アイコンとテキストを横並びにする */
+      align-items: center; /* アイコンとテキストを垂直方向中央に揃える */
     }
     .app p {
       margin: 0.5em 0;
@@ -55,6 +56,11 @@
     .label {
       font-weight: bold;
       color: #222;
+    }
+    .app-icon { /* アイコン用の新しいスタイル */
+      width: 32px; /* アイコンの幅 */
+      height: 32px; /* アイコンの高さ */
+      margin-right: 0.5em; /* テキストとの間隔 */
     }
     a {
       color: #4f46e5;
@@ -72,7 +78,7 @@
     .hidden {
       display: none;
     }
-  
+
     @media (max-width: 600px) {
       body {
         padding: 1em;
@@ -123,35 +129,35 @@
     </div>
 
 <div class="app" data-category="エンターテイメント">
-<h2>3単語日記-私の脳内-</h2>
+<h2><img src="assets/icon/three_word_dialy.png" alt="3単語日記アイコン" class="app-icon">3単語日記-私の脳内-</h2>
 <p><span class="label">カテゴリ:</span> エンターテイメント</p>
 <p><span class="label">Android版:</span> 審査中</p>
 <p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745698061" target="_blank">App Storeで見る</a></p>
 <p>1日を3つの単語で記録することで、自分の思考傾向や感情を見える化する自己理解促進アプリ。あなたの脳内を視覚化して友達・恋人と共有してみてください</p>
 </div>
 <div class="app" data-category="エンターテイメント">
-<h2>LifeTimer-生活リズムを整える-</h2>
+<h2><img src="assets/icon/lifetimer.png" alt="LifeTimerアイコン" class="app-icon">LifeTimer-生活リズムを整える-</h2>
 <p><span class="label">カテゴリ:</span> エンターテイメント</p>
 <p><span class="label">Android版:</span> 審査中</p>
 <p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745680646" target="_blank">App Storeで見る</a></p>
 <p>生活習慣をあらかじめ登録するだけでライフイベントカレンダー簡単に作成できるアプリ。達成度は視覚的にグラフで確認</p>
 </div>
 <div class="app" data-category="エンターテイメント">
-<h2>今日の仮面-本当の私を探して-</h2>
+<h2><img src="assets/icon/today_mask.png" alt="今日の仮面アイコン" class="app-icon">今日の仮面-本当の私を探して-</h2>
 <p><span class="label">カテゴリ:</span> エンターテイメント</p>
 <p><span class="label">Android版:</span> 審査中</p>
 <p><span class="label">iOS版:</span> 審査中</p>
 <p>毎朝7時に通知が届き、その日の「仮面」を提案。1日をどう過ごすかの指針とする自己対話サポートアプリ。数多の仮面を使いこなそう。</p>
 </div>
 <div class="app" data-category="スポーツ">
-<h2>バドミントン試合管理</h2>
+<h2><img src="assets/icon/badminton.png" alt="バドミントン試合管理アイコン" class="app-icon">バドミントン試合管理</h2>
 <p><span class="label">カテゴリ:</span> スポーツ</p>
 <p><span class="label">Android版:</span> 審査中</p>
 <p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745685426" target="_blank">App Storeで見る</a></p>
 <p>メンバー登録を行うことで、自動で対戦表を生成し、試合結果をランキング形式で記録・表示できるバドミントン専用マネジメントアプリ。大会や練習試合の運営がスムーズに。</p>
 </div>
 <div class="app" data-category="トレーニング">
-<h2>Myインターバルタイマー</h2>
+<h2><img src="assets/icon/interval_timer.png" alt="Myインターバルタイマーアイコン" class="app-icon">Myインターバルタイマー</h2>
 <p><span class="label">カテゴリ:</span> トレーニング</p>
 <p><span class="label">Android版:</span> 審査中</p>
 <p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745688024" target="_blank">App Storeで見る</a></p>
