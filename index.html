@@ -20,73 +20,109 @@
 </head>
 <body>
   <header>
-    <h1>📱 KnotNest アプリ一覧</h1>
-    <p>あなたの暮らしを豊かにするアプリたち</p>
+    <h1>📱 KnotNest</h1>
+    <p>"ちょっとしたアイデア"を形にするアプリたち</p>
+    <div class="social-links">
+      <a href="https://x.com/KnotNest_Apps" target="_blank" class="social-link twitter">
+        <svg viewBox="0 0 24 24" class="twitter-icon">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        旧Twitter
+      </a>
+    </div>
   </header>
   <div class="container">
     <div class="filter">
-      <label for="category">カテゴリで絞り込み: </label>
       <select id="category" onchange="filterCategory(this.value)">
-        <option value="all">すべて表示</option><option value="エンターテイメント">エンターテイメント</option>
-<option value="スポーツ">スポーツ</option>
-<option value="トレーニング">トレーニング</option>
+        <option value="all">すべてのアプリ</option>
+        <option value="エンターテイメント">エンターテイメント</option>
+        <option value="スポーツ">スポーツ</option>
+        <option value="トレーニング">トレーニング</option>
       </select>
     </div>
 
+    <div class="app-grid">
+      <div class="app" data-category="エンターテイメント">
+        <div class="app-header">
+          <img src="assets/icon/mapping.png" alt="マッピングメモリアル" class="app-icon">
+          <h2>マッピングメモリアル</h2>
+        </div>
+        <p class="app-description">地図と思い出写真を紐づけて管理。大切な人との思い出を地図上に残すアプリ。</p>
+        <div class="app-links">
+          <a href="https://apps.apple.com/jp/app/id6746159780" target="_blank" class="store-link ios">App Store</a>
+          <span class="coming-soon">Play Store 準備中</span>
+        </div>
+        <a href="privacypolicy/mapping_memory.html" target="_blank" class="privacy-link">プライバシーポリシー</a>
+      </div>
 
-<div class="app" data-category="エンターテイメント">
-<h2><img src="assets/icon/mapping.png" alt="マッピングメモリアル" class="app-icon">マッピングメモリアル</h2>
-<p><span class="label">カテゴリ:</span> エンターテイメント</p>
-<p><span class="label">Android版:</span> 審査中</p>
-<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6746159780" target="_blank">App Storeで見る</a></p>
-<p>地図と思い出写真を紐づけて管理。大切な人との思い出を地図上に残すアプリ。</p>
-<p><a href="privacypolicy/mapping_memory.html" target="_blank">プライバシーポリシー</a></p>
-</div>
-<div class="app" data-category="エンターテイメント">
-<h2><img src="assets/icon/three_word_dialy.png" alt="3単語日記アイコン" class="app-icon">3単語日記-私の脳内-</h2>
-<p><span class="label">カテゴリ:</span> エンターテイメント</p>
-<p><span class="label">Android版:</span> 審査中</p>
-<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745698061" target="_blank">App Storeで見る</a></p>
-<p>1日を3つの単語で記録することで、自分の思考傾向や感情を見える化する自己理解促進アプリ。あなたの脳内を視覚化して友達・恋人と共有してみてください</p>
-<p><a href="privacypolicy/three_word_dialy.html" target="_blank">プライバシーポリシー</a></p>
-</div>
-<div class="app" data-category="エンターテイメント">
-<h2><img src="assets/icon/lifetimer.png" alt="LifeTimerアイコン" class="app-icon">LifeTimer-生活リズムを整える-</h2>
-<p><span class="label">カテゴリ:</span> エンターテイメント</p>
-<p><span class="label">Android版:</span> 審査中</p>
-<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745680646" target="_blank">App Storeで見る</a></p>
-<p>生活習慣をあらかじめ登録するだけでライフイベントカレンダー簡単に作成できるアプリ。達成度は視覚的にグラフで確認</p>
-<p><a href="privacypolicy/lifetimer.html" target="_blank">プライバシーポリシー</a></p>
-</div>
-<div class="app" data-category="エンターテイメント">
-<h2><img src="assets/icon/today_mask.png" alt="今日の仮面アイコン" class="app-icon">今日の仮面-本当の私を探して-</h2>
-<p><span class="label">カテゴリ:</span> エンターテイメント</p>
-<p><span class="label">Android版:</span> 審査中</p>
-<p><span class="label">iOS版:</span> 審査中</p>
-<p>毎朝7時に通知が届き、その日の「仮面」を提案。1日をどう過ごすかの指針とする自己対話サポートアプリ。数多の仮面を使いこなそう。</p>
-<p><a href="privacypolicy/today_mask.html" target="_blank">プライバシーポリシー</a></p>
-</div>
-<div class="app" data-category="スポーツ">
-<h2><img src="assets/icon/badminton.png" alt="バドミントン試合管理アイコン" class="app-icon">バドミントン試合管理</h2>
-<p><span class="label">カテゴリ:</span> スポーツ</p>
-<p><span class="label">Android版:</span><a href="https://play.google.com/store/apps/details?id=com.badminton_app" target="_blank">Google Playで見る</a></p>
-<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745685426" target="_blank">App Storeで見る</a></p>
-<p>メンバー登録を行うことで、自動で対戦表を生成し、試合結果をランキング形式で記録・表示できるバドミントン専用マネジメントアプリ。大会や練習試合の運営がスムーズに。</p>
-<p><a href="privacypolicy/badminton.html" target="_blank">プライバシーポリシー</a></p>
+      <div class="app" data-category="エンターテイメント">
+        <div class="app-header">
+          <img src="assets/icon/three_word_dialy.png" alt="3単語日記アイコン" class="app-icon">
+          <h2>3単語日記-私の脳内-</h2>
+        </div>
+        <p class="app-description">1日を3つの単語で記録することで、自分の思考傾向や感情を見える化する自己理解促進アプリ。</p>
+        <div class="app-links">
+          <a href="https://apps.apple.com/jp/app/id6745698061" target="_blank" class="store-link ios">App Store</a>
+          <span class="coming-soon">Play Store 準備中</span>
+        </div>
+        <a href="privacypolicy/three_word_dialy.html" target="_blank" class="privacy-link">プライバシーポリシー</a>
+      </div>
 
-</div>
-<div class="app" data-category="トレーニング">
-<h2><img src="assets/icon/interval_timer.png" alt="Myインターバルタイマーアイコン" class="app-icon">Myインターバルタイマー</h2>
-<p><span class="label">カテゴリ:</span> トレーニング</p>
-<p><span class="label">Android版:</span><a href="https://play.google.com/store/apps/details?id=com.interval_app" target="_blank">Google Playで見る</a></p>
-<p><span class="label">iOS版:</span> <a href="https://apps.apple.com/jp/app/id6745688024" target="_blank">App Storeで見る</a></p>
-<p>種目ごとに柔軟にインターバルを設定できるトレーニングタイマー。複数のトレーニング種目を登録し柔軟に組み合わせることで自分だけのインターバルタイマーを作ろう。筋トレやHIIT、フィットネスに最適。</p>
-<p><a href="privacypolicy/interval_timer.html" target="_blank">プライバシーポリシー</a></p>
-</div>
+      <div class="app" data-category="エンターテイメント">
+        <div class="app-header">
+          <img src="assets/icon/lifetimer.png" alt="LifeTimerアイコン" class="app-icon">
+          <h2>LifeTimer-生活リズムを整える-</h2>
+        </div>
+        <p class="app-description">生活習慣をあらかじめ登録するだけでライフイベントカレンダー簡単に作成できるアプリ。</p>
+        <div class="app-links">
+          <a href="https://apps.apple.com/jp/app/id6745680646" target="_blank" class="store-link ios">App Store</a>
+          <span class="coming-soon">Play Store 準備中</span>
+        </div>
+        <a href="privacypolicy/lifetimer.html" target="_blank" class="privacy-link">プライバシーポリシー</a>
+      </div>
 
+      <div class="app" data-category="エンターテイメント">
+        <div class="app-header">
+          <img src="assets/icon/today_mask.png" alt="今日の仮面アイコン" class="app-icon">
+          <h2>今日の仮面-本当の私を探して-</h2>
+        </div>
+        <p class="app-description">毎朝7時に通知が届き、その日の「仮面」を提案。1日をどう過ごすかの指針とする自己対話サポートアプリ。</p>
+        <div class="app-links">
+          <span class="coming-soon">App Store 準備中</span>
+          <span class="coming-soon">Play Store 準備中</span>
+        </div>
+        <a href="privacypolicy/today_mask.html" target="_blank" class="privacy-link">プライバシーポリシー</a>
+      </div>
+
+      <div class="app" data-category="スポーツ">
+        <div class="app-header">
+          <img src="assets/icon/badminton.png" alt="バドミントン試合管理アイコン" class="app-icon">
+          <h2>バドミントン試合管理</h2>
+        </div>
+        <p class="app-description">メンバー登録を行うことで、自動で対戦表を生成し、試合結果をランキング形式で記録・表示できるバドミントン専用マネジメントアプリ。</p>
+        <div class="app-links">
+          <a href="https://apps.apple.com/jp/app/id6745685426" target="_blank" class="store-link ios">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.badminton_app" target="_blank" class="store-link android">Google Play</a>
+        </div>
+        <a href="privacypolicy/badminton.html" target="_blank" class="privacy-link">プライバシーポリシー</a>
+      </div>
+
+      <div class="app" data-category="トレーニング">
+        <div class="app-header">
+          <img src="assets/icon/interval_timer.png" alt="Myインターバルタイマーアイコン" class="app-icon">
+          <h2>Myインターバルタイマー</h2>
+        </div>
+        <p class="app-description">種目ごとに柔軟にインターバルを設定できるトレーニングタイマー。筋トレやHIIT、フィットネスに最適。</p>
+        <div class="app-links">
+          <a href="https://apps.apple.com/jp/app/id6745688024" target="_blank" class="store-link ios">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.interval_app" target="_blank" class="store-link android">Google Play</a>
+        </div>
+        <a href="privacypolicy/interval_timer.html" target="_blank" class="privacy-link">プライバシーポリシー</a>
+      </div>
+    </div>
   </div>
   <footer>
-    <p><a href="https://forms.gle/E4rJ5h3kstco5KoE8" target="_blank" style="font-weight: bold;">お問い合わせはこちら</a></p>
+    <p><a href="https://forms.gle/E4rJ5h3kstco5KoE8" target="_blank">お問い合わせ</a></p>
     <p>© 2025 KnotNest</p>
   </footer>
 </body>
