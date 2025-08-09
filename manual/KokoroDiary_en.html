@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kokoro Diary User Manual</title>
+  <meta name="description" content="Kokoro Diary usage guide. Introducing main features, usage, subscription, tips, troubleshooting, and contact information for beginners." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #101418;
+      --muted: #5b6570;
+      --brand: #5b7cff;
+      --accent: #f2f5ff;
+      --border: #e7e9ee;
+      --callout: #fff8e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1216;
+        --fg: #e8ecf2;
+        --muted: #a9b4c0;
+        --brand: #8aa2ff;
+        --accent: #1a2238;
+        --border: #242a34;
+        --callout: #1a1a12;
+      }
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif; line-height: 1.7; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(12px); background: color-mix(in srgb, var(--bg) 85%, transparent); border-bottom: 1px solid var(--border); z-index: 5; }
+    header .inner { max-width: 960px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+    header h1 { font-size: 18px; margin: 0; font-weight: 700; }
+    header a { color: var(--brand); text-decoration: none; font-size: 14px; }
+
+    nav.toc { border: 1px solid var(--border); background: var(--accent); border-radius: 12px; padding: 12px 16px; margin: 16px 0 24px; }
+    nav.toc strong { display: block; margin-bottom: 8px; }
+    nav.toc a { color: var(--fg); text-decoration: none; }
+    nav.toc ul { margin: 0; padding-left: 18px; }
+    nav.toc li { margin: 6px 0; }
+
+    h2 { margin-top: 36px; font-size: 22px; }
+    h3 { margin-top: 20px; font-size: 18px; }
+    p, li { font-size: 16px; }
+    .section { scroll-margin-top: 72px; }
+    .callout { background: var(--callout); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; }
+    .label { display: inline-block; font-size: 12px; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 2px 10px; margin-left: 8px; }
+    .list-tight li { margin: 4px 0; }
+    .footer { margin-top: 48px; font-size: 13px; color: var(--muted); }
+    a { color: var(--brand); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+    .top { position: fixed; right: 16px; bottom: 16px; background: var(--brand); color: #fff; border: 0; border-radius: 999px; padding: 10px 14px; cursor: pointer; box-shadow: 0 6px 24px rgb(0 0 0 / 15%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1>Kokoro Diary User Manual</h1>
+      <a href="#start">Getting Started</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section id="start" class="section">
+      <div class="callout">
+        <strong>Welcome!</strong> Your daily small thoughts become the "traces of your heart." Start with just 1-3 lines and take it easy.
+      </div>
+    </section>
+
+    <nav class="toc">
+      <strong>Table of Contents</strong>
+      <ul>
+        <li><a href="#features">1. Main Features</a></li>
+        <li><a href="#howto">2. How to Use the App</a></li>
+        <li><a href="#sub">3. About Subscription</a></li>
+        <li><a href="#tips">4. Tips for Continuing</a></li>
+        <li><a href="#trouble">5. Troubleshooting</a></li>
+        <li><a href="#contact">6. Contact Information</a></li>
+      </ul>
+    </nav>
+
+    <section id="features" class="section">
+      <h2>1. Main Features</h2>
+
+      <h3>How to Change Partner <span class="label">Settings</span></h3>
+      <ul class="list-tight">
+        <li>You can change your partner from the <strong>Settings screen</strong>. Customize your companion that stays by your side and warmly watches over your daily records.</li>
+      </ul>
+      <img src="../assets/image/kokoro/partner.png" alt="Partner Settings Screen" style="max-width: 300px; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border);">
+
+      <h3>Home Screen</h3>
+      <ul class="list-tight">
+        <li><strong>Heart Tree:</strong> Grows each time you post a diary entry. The more you continue, the richer it becomes, making your daily accumulation visible.</li>
+      </ul>
+      <img src="../assets/image/kokoro/kokoro_tree.png" alt="Heart Tree" style="max-width: 300px; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border);">
+      <ul class="list-tight">
+        <li><strong>Post History:</strong> Check your number of posts and consecutive days at a glance. Achievement motivates you to continue.</li>
+      </ul>
+
+      <h3>Diary Entry</h3>
+      <ul class="list-tight">
+        <li><strong>Normal Mode:</strong> Record daily events and feelings freely.</li>
+        <li><strong>Dream Diary Mode:</strong> Dream analysis is enabled to analyze and comment on your dream world. Turn the blue line section ON for dream diary mode, OFF for normal mode.</li>
+        <img src="../assets/image/kokoro/entry.png" alt="Diary Entry Screen" style="max-width: 300px; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border);">
+        <li><strong>AI Comments:</strong> Your partner gives gentle comments based on your content. Makes reflection enjoyable.</li>
+      </ul>
+
+      <h3>Diary List</h3>
+      <ul class="list-tight">
+        <li><strong>Filtering</strong> (bookmarks/with images/dream diaries only, etc.) allows you to quickly narrow down the records you want to see.</li>
+      </ul>
+
+      <h3>Dashboard</h3>
+      <ul class="list-tight">
+        <li><strong>Emotion Monitoring:</strong> Check daily positive/negative trends</li>
+        <li><strong>Emotion Calendar:</strong> Intuitively grasp daily mood trends with colors</li>
+        <li><strong>Radar Chart:</strong> Visualize emotional balance</li>
+        <li><strong>Word Cloud:</strong> Display frequently used words at a glance</li>
+        <li><strong>Weekly/Monthly Reports:</strong> Check AI-summarized trends (watch ads or subscribe)</li>
+        <li><strong>Day-of-week Emotion Trends:</strong> Discover weekly rhythms with average scores by day</li>
+        <li><strong>Monthly Emotion Trends:</strong> Understand changes in early, mid, and late month</li>
+        <li><strong>Emotional Stability:</strong> Visualize heart fluctuations and check stability</li>
+      </ul>
+    </section>
+
+    <section id="howto" class="section">
+      <h2>2. How to Use the App</h2>
+
+      <h3>Recommended Usage</h3>
+      <ul class="list-tight">
+        <li>Even <strong>1-3 lines</strong> daily is OK! The more you continue, the more your "Heart Tree" grows.</li>
+        <li>The Heart Tree might super-evolve when it breaks its limits...?</li>
+        <li>Think of diary writing as <strong>communication with your partner</strong>.</li>
+        <li>Writing events and emotions with <strong>specific words</strong> makes analysis and reflection more enjoyable.</li>
+        <li>For dream diaries, write <strong>immediately after waking up</strong>. Vivid content remains, improving dream analysis accuracy.</li>
+      </ul>
+
+      <h3>Dashboard Feature Details</h3>
+      <div class="callout">
+        <strong>💡 Tips for Reading the Dashboard</strong><br>
+        Check data after writing diaries for 3 or more days for more accurate trends.
+      </div>
+      <ul class="list-tight">
+        <li><strong>Emotion Monitoring:</strong> Check trends over 7/14/30 days or custom periods</li>
+        <li><strong>Emotion Calendar:</strong> Quickly grasp mood flow with colors</li>
+        <li><strong>Radar Chart:</strong> Check emotional balance</li>
+        <li><strong>Day-of-week Emotion Trends:</strong> Discover weekly mood patterns</li>
+        <li><strong>Monthly Emotion Trends:</strong> Overview changes within the month</li>
+        <li><strong>Emotional Stability:</strong> Check heart waves with numbers and graphs</li>
+        <li><strong>Word Cloud:</strong> Enjoy frequent words visually</li>
+        <li><strong>Reports:</strong> AI summarizes weekly/monthly trends (watch ads or subscribe)</li>
+      </ul>
+    </section>
+
+    <section id="sub" class="section">
+      <h2>3. About Subscription</h2>
+      <ul class="list-tight">
+        <li>Use smoothly <strong>without ads</strong>.</li>
+        <li>Details can be checked in the app's <strong>Settings > Subscription</strong>.</li>
+        <li>Enjoy one month comfortably for <strong>the price of two cups of coffee</strong></li>
+        <li>We're operating at a loss every month, so your cooperation would be greatly appreciated.</li>
+      </ul>
+    </section>
+
+    <section id="tips" class="section">
+      <h2>4. Tips for Continuing</h2>
+      <ul class="list-tight">
+        <li><strong>Normal diary example:</strong> "Had lunch with a colleague today. The new pasta place was delicious and my mood went UP!"</li>
+        <li><strong>Dream diary example:</strong> "Dream of running on the beach. The sky was pink and fantastical. The afterglow remained even after waking up."</li>
+        <li>Even short entries are OK. The more you continue, the more it becomes a habit, and you'll see your changes and growth.</li>
+        <li>Including emotional words and proper nouns doubles the fun when looking back later.</li>
+      </ul>
+    </section>
+
+    <section id="trouble" class="section">
+      <h2>5. Troubleshooting</h2>
+      
+      <h3>Frequently Asked Questions</h3>
+      <ul class="list-tight">
+        <li><strong>Diary registration fails:</strong> Check your internet connection and try again after a few minutes.</li>
+        <li><strong>Diary registration is slow:</strong> Partner comment registration may take 20-30 seconds. Please wait patiently.</li>
+        <li><strong>Nothing displays on dashboard:</strong> Please check the dashboard after writing at least 3 diary entries.</li>
+        <li><strong>AI comments don't appear:</strong> Network environment may be unstable. Try reopening the app.</li>
+        <li><strong>Heart Tree doesn't grow:</strong> It grows when you post diaries. It may take some time for posts to be reflected.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>🔧 If issues persist</strong><br>
+        Please contact us with app version, device information, and screenshots. We'll provide prompt support.
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>6. Contact Information</h2>
+      <p>Email: <a href="mailto:support@knotnest.jp">support@knotnest.jp</a></p>
+      <p class="muted">Including situation details and screenshots helps us provide smooth guidance.</p>
+    </section>
+
+    <p class="footer">© <span id="y"></span> Kokoro Diary</p>
+  </div>
+
+  <button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+  <script>
+    // Auto year
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Improve link navigation experience in HtmlView (optional)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
