@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kokoro Diary ユーザーマニュアル</title>
+  <meta name="description" content="Kokoro Diary の使い方ガイド。はじめての方向けに主な機能、使い方、サブスク、コツ、トラブル対応、お問い合わせ先を紹介します。" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #101418;
+      --muted: #5b6570;
+      --brand: #5b7cff;
+      --accent: #f2f5ff;
+      --border: #e7e9ee;
+      --callout: #fff8e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1216;
+        --fg: #e8ecf2;
+        --muted: #a9b4c0;
+        --brand: #8aa2ff;
+        --accent: #1a2238;
+        --border: #242a34;
+        --callout: #1a1a12;
+      }
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji",sans-serif; line-height: 1.7; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(12px); background: color-mix(in srgb, var(--bg) 85%, transparent); border-bottom: 1px solid var(--border); z-index: 5; }
+    header .inner { max-width: 960px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+    header h1 { font-size: 18px; margin: 0; font-weight: 700; }
+    header a { color: var(--brand); text-decoration: none; font-size: 14px; }
+
+    nav.toc { border: 1px solid var(--border); background: var(--accent); border-radius: 12px; padding: 12px 16px; margin: 16px 0 24px; }
+    nav.toc strong { display: block; margin-bottom: 8px; }
+    nav.toc a { color: var(--fg); text-decoration: none; }
+    nav.toc ul { margin: 0; padding-left: 18px; }
+    nav.toc li { margin: 6px 0; }
+
+    h2 { margin-top: 36px; font-size: 22px; }
+    h3 { margin-top: 20px; font-size: 18px; }
+    p, li { font-size: 16px; }
+    .section { scroll-margin-top: 72px; }
+    .callout { background: var(--callout); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; }
+    .label { display: inline-block; font-size: 12px; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 2px 10px; margin-left: 8px; }
+    .list-tight li { margin: 4px 0; }
+    .footer { margin-top: 48px; font-size: 13px; color: var(--muted); }
+    a { color: var(--brand); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+    .top { position: fixed; right: 16px; bottom: 16px; background: var(--brand); color: #fff; border: 0; border-radius: 999px; padding: 10px 14px; cursor: pointer; box-shadow: 0 6px 24px rgb(0 0 0 / 15%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <h1>Kokoro Diary ユーザーマニュアル</h1>
+      <a href="#start">はじめての方へ</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section id="start" class="section">
+      <div class="callout">
+        <strong>ようこそ！</strong> 毎日の小さなひとことが、あなたの“こころの軌跡”になります。まずは1〜3行から、気軽に始めてみましょう。
+      </div>
+    </section>
+
+    <nav class="toc">
+      <strong>目次</strong>
+      <ul>
+        <li><a href="#features">1. 主な機能</a></li>
+        <li><a href="#howto">2. アプリの使い方</a></li>
+        <li><a href="#sub">3. サブスクについて</a></li>
+        <li><a href="#tips">4. 続けるためのコツ</a></li>
+        <li><a href="#trouble">5. トラブルシューティング</a></li>
+        <li><a href="#contact">6. お問い合わせ先</a></li>
+      </ul>
+    </nav>
+
+    <section id="features" class="section">
+      <h2>1. 主な機能</h2>
+
+      <h3>パートナー変更方法 <span class="label">設定</span></h3>
+      <ul class="list-tight">
+        <li><strong>設定画面</strong>からパートナーを変更できます。あなたに寄り添い、毎日の記録を温かく見守ってくれる存在を、自分好みにカスタマイズしましょう。</li>
+      </ul>
+      <img src="../assets/image/kokoro/partner.png" alt="パートナー設定画面" style="max-width: 300px; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border);">
+
+      <h3>ホーム画面</h3>
+      <ul class="list-tight">
+        <li><strong>こころの木：</strong> 日記を投稿するたびに成長。続けるほど豊かになり、日々の積み重ねが目に見えてわかります。</li>
+      </ul>
+      <img src="../assets/image/kokoro/kokoro_tree.png" alt="こころの木" style="max-width: 300px; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border);">
+      <ul class="list-tight">
+        <li><strong>投稿履歴：</strong> 投稿数や継続日数を一目で確認。達成感がやる気を後押し。</li>
+      </ul>
+
+      <h3>日記登録</h3>
+      <ul class="list-tight">
+        <li><strong>通常モード：</strong> 日常の出来事や感じたことを自由に記録。</li>
+        <li><strong>夢日記モード：</strong> 夢解析が有効になり、夢の世界を分析＆コメント。青線部分をONにすると夢日記モード、OFFにすると通常モードになります。</li>
+        <img src="../assets/image/kokoro/entry.png" alt="日記登録画面" style="max-width: 300px; margin: 12px 0; border-radius: 8px; border: 1px solid var(--border);">
+        <li><strong>AIコメント：</strong> 内容に合わせてパートナーが優しくコメント。振り返りが楽しくなります。</li>
+      </ul>
+
+      <h3>日記一覧</h3>
+      <ul class="list-tight">
+        <li><strong>フィルタリング</strong>（ブックマーク／画像あり／夢日記のみ など）で、見たい記録を素早く絞り込めます。</li>
+      </ul>
+
+      <h3>ダッシュボード</h3>
+      <ul class="list-tight">
+        <li><strong>感情モニタリング：</strong> 日ごとのポジ／ネガ推移を確認</li>
+        <li><strong>感情カレンダー：</strong> 色で日々の気分の傾向を直感的に把握</li>
+        <li><strong>レーダーチャート：</strong> 感情のバランスを視覚化</li>
+        <li><strong>ワードクラウド：</strong> よく使う言葉をパッと表示</li>
+        <li><strong>週次／月次レポート：</strong> AIがまとめた傾向をチェック（広告視聴 or サブスク）</li>
+        <li><strong>曜日別の感情傾向：</strong> 曜日ごとの平均スコアで、一週間のリズムを発見</li>
+        <li><strong>月内の感情傾向：</strong> 月の前半・中盤・後半での変化を把握</li>
+        <li><strong>感情安定度：</strong> 心の揺れ幅を見える化し、安定度を確認</li>
+      </ul>
+    </section>
+
+    <section id="howto" class="section">
+      <h2>2. アプリの使い方</h2>
+
+      <h3>おすすめの使い方</h3>
+      <ul class="list-tight">
+        <li>毎日 <strong>1〜3行</strong> でもOK！ 続けるほど「こころの木」が育ちます。</li>
+        <li>こころの木は限界突破すると超進化するかも・・・？</li>
+        <li>日記は <strong>パートナーとのコミュニケーション</strong> として捉えてください。</li>
+        <li>出来事や感情は <strong>具体的なことば</strong> で書くと、分析や振り返りがもっと楽しく。</li>
+        <li>夢日記は <strong>起きてすぐ</strong> に。鮮明な内容が残り、夢解析の精度もアップ。</li>
+      </ul>
+
+      <h3>ダッシュボード機能の詳細</h3>
+      <div class="callout">
+        <strong>💡 ダッシュボードの見方のコツ</strong><br>
+        データは3日以上日記を書いてから確認すると、より正確な傾向がわかります。
+      </div>
+      <ul class="list-tight">
+        <li><strong>感情モニタリング：</strong> 7日／14日／30日／カスタムで推移を確認</li>
+        <li><strong>感情カレンダー：</strong> 色で気分の流れをパッと把握</li>
+        <li><strong>レーダーチャート：</strong> 感情のバランスをチェック</li>
+        <li><strong>曜日別感情傾向：</strong> 曜日ごとの気分のクセを発見</li>
+        <li><strong>月内感情傾向：</strong> 月の中の変化を俯瞰</li>
+        <li><strong>感情安定度：</strong> 心の波を数値とグラフで確認</li>
+        <li><strong>ワードクラウド：</strong> 頻出語をビジュアルで楽しむ</li>
+        <li><strong>レポート：</strong> 週次・月次でAIが傾向をまとめ（広告視聴 or サブスク）</li>
+      </ul>
+    </section>
+
+    <section id="sub" class="section">
+      <h2>3. サブスクについて</h2>
+      <ul class="list-tight">
+        <li><strong>広告なし</strong>でスムーズに利用。</li>
+        <li>詳細はアプリの <strong>設定 ＞ サブスクリプション</strong> で確認できます。</li>
+        <li><strong>コーヒー2杯分の金額</strong>で1ヶ月快適にご利用いただけます</li>
+        <li>毎月赤字運営しているため、ご協力いただけると非常に助かります。</li>
+      </ul>
+    </section>
+
+    <section id="tips" class="section">
+      <h2>4. 続けるためのコツ</h2>
+      <ul class="list-tight">
+        <li><strong>通常日記の例：</strong>「今日は同僚とランチ。新しいパスタ屋が美味しくて気分もUP！」</li>
+        <li><strong>夢日記の例：</strong>「海辺を走る夢。空がピンク色で幻想的。目覚めた後も余韻が残った。」</li>
+        <li>短くてもOK。続けるほど習慣になり、自分の変化や成長が見えてきます。</li>
+        <li>感情語や固有名詞を入れると、後から見返したときの楽しさが倍増します。</li>
+      </ul>
+    </section>
+
+    <section id="trouble" class="section">
+      <h2>5. トラブルシューティング</h2>
+      
+      <h3>よくある質問</h3>
+      <ul class="list-tight">
+        <li><strong>日記の登録に失敗する：</strong> ネット環境を確認し、数分待って再試行してください。</li>
+        <li><strong>日記の登録が遅い：</strong> パートナーのコメント登録に20~30秒かかる場合があります。ゆっくりしてお待ちください。</li>
+        <li><strong>ダッシュボードに何も表示されない：</strong> 最低3回以上日記を書いてからダッシュボードをご確認ください。</li>
+        <li><strong>AIコメントが表示されない：</strong> ネットワーク環境が不安定な場合があります。再度アプリを開き直してみてください。</li>
+        <li><strong>こころの木が成長しない：</strong> 日記を投稿すると成長します。投稿が反映されるまで少しお時間をいただく場合があります。</li>
+      </ul>
+
+      <div class="callout">
+        <strong>🔧 解決しない場合は</strong><br>
+        アプリのバージョン・端末情報・スクリーンショットを添えてお問い合わせください。迅速にサポートいたします。
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>6. お問い合わせ先</h2>
+      <p>メール：<a href="mailto:support@knotnest.jp">support@knotnest.jp</a></p>
+      <p class="muted">状況やスクリーンショットを添えていただくと、スムーズにご案内できます。</p>
+    </section>
+
+    <p class="footer">© <span id="y"></span> Kokoro Diary</p>
+  </div>
+
+  <button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+  <script>
+    // 年号を自動で
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // HtmlView 内でのリンク遷移の体験を少し良くする（任意）
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
