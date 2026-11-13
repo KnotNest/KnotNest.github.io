@@ -28,13 +28,15 @@
     <li>Advertisement delivery via Google AdMob</li>
     <li>User authentication via Firebase Authentication (Note: passwords are not stored)</li>
     <li>Storage of user-entered diary data in Cloud Firestore</li>
-    <li>Analysis and summarization of diary entries using OpenAI (ChatGPT)</li>
+    <li>Analysis and summarization of diary entries, chat and voice responses, and diary draft creation using OpenAI APIs</li>
+    <li>Aggregation of usage counts and diary creation modes to provide and improve features and prevent abuse</li>
   </ul>
 
   <h2>2. Types of Information Collected</h2>
   <ul>
     <li>Firebase UID (User Identifier)</li>
-    <li>Diary content</li>
+    <li>Diary content, chat input, voice conversation audio and transcriptions, and photos attached to diaries</li>
+    <li>Diary creation modes, usage timestamps, and feature usage counts</li>
     <li>Device information such as Advertising ID</li>
     <li>App usage logs and access data (e.g., IP address, timestamps)</li>
   </ul>
@@ -46,6 +48,11 @@
     <li>Google AdMob</li>
     <li>OpenAI (ChatGPT)</li>
   </ul>
+
+  <h3>Data Sent to OpenAI for Chat and Voice Features</h3>
+  <p>The chat feature sends your input and conversation history to OpenAI. The voice feature sends audio captured by your microphone to OpenAI to generate responses and transcriptions. To ask questions relevant to the conversation, the Application also sends context from your own recent diary entries (up to seven entries, including the first 1,000 characters of each entry and its date and time). Your statements from the conversation are sent to create a diary draft.</p>
+  <p>Audio is streamed during a voice conversation. In manual-send mode, the Send button starts the AI response; it does not mean that audio remains only on your device until you press it. When the microphone is paused, audio is not sent to the conversation. Ending the voice conversation stops audio transmission.</p>
+  <p>A diary created from a conversation is saved to Cloud Firestore, linked to your account, when you choose to save it. The conversation feature does not store audio recording files or full conversation transcripts in Firestore as a separate history. OpenAI handles and retains data according to its API data policies. By default, API data is not used to train models and may generally be retained for up to 30 days for abuse monitoring. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI's API data controls</a> for details.</p>
 
   <h2>4. Opt-Out</h2>
   <p>Users can stop the collection of information by uninstalling this Application.</p>
@@ -61,6 +68,8 @@
 
   <h2>8. Changes to the Policy</h2>
   <p>This Privacy Policy may be updated as needed. The latest version will always be posted on this page.</p>
+
+  <p>Last updated: November 13, 2026</p>
 
   <h2>9. Contact</h2>
   <p>If you have any questions about this Privacy Policy, please contact us at the email address below.</p>
